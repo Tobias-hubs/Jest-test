@@ -1,3 +1,11 @@
-const{ convertToUpperCase} = require("./app"); 
+const convertToUppercase = require('./app');
 
-test("ändra text till VERSALER"), () => { expect(convertToUpperCase("hello world")).toBe("HELLO WORLD");};
+test('ändra text till VERSALER', () => {
+    expect(convertToUppercase('hello world')).toBe('HELLO WORLD');     
+    expect(convertToUppercase('Test')).toBe('TEST');
+    expect(convertToUppercase('123abc')).toBe('123ABC');
+});
+
+
+
+
